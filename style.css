@@ -1,0 +1,158 @@
+/* ==============================
+   Farb- und Font-Variablen
+============================== */
+:root {
+  --color-primary: #13294b;    /* Kallinich-Dunkelblau */
+  --color-accent: #8dc63f;     /* Kallinich-Grün */
+  --font-base: 'Open Sans', sans-serif;
+}
+
+/* ==============================
+   Globales Reset & Basis
+============================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   Header
+============================== */
+header {
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+header h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+header p {
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+/* ==============================
+   Main-Content
+============================== */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ==============================
+   Produkt-Grid
+============================== */
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.product {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33% - 1rem);
+  padding: 1rem;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.product h2 {
+  color: var(--color-primary);
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.product p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.product button {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.product button:hover {
+  opacity: 0.9;
+}
+
+/* ==============================
+   Umfrage
+============================== */
+#survey {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+#survey h2 {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#survey p {
+  margin-bottom: 1rem;
+}
+
+#survey label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#survey textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  resize: vertical;
+  font-family: var(--font-base);
+  margin-bottom: 1rem;
+}
+
+#survey button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+#survey button:hover {
+  opacity: 0.9;
+}
